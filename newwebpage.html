@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<title>My first Webpage</title>
+		
+		<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'> </script>
+		
+		
+		<script>
+			$(function(){
+				var url = 'http://api.open-notify.org/astros.json';
+				var data;
+				
+				$.getJSON(url, function(data) {
+				  
+					console.log(data.people);
+					document.write(JSON.stringify(data.people));
+					
+				});
+				
+				
+				
+				/*
+				
+				$.ajax({ 
+                type: 'GET', 
+                url: , 'https://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=d3cd2f89-aaa4-4acc-9f17-473a7a555f62'
+                data: { get_param: 'value' }, 
+                dataType:'json',
+                success: function (data) { 
+                                    var names = data
+                    $('#cand').html(data);
+                }
+            });
+			*/
+			
+			
+			
+			
+			});
+		
+		</script>
+	</head>
+	
+		
+	<body>
+		<h1>I want to overcome all the potential difficulties.</h1>
+		<hr></hr>
+		<p>The way to success consists of confidence, input, and practice.</p> 
+		<p id="demo"></p>
+		<script>
+			
+			
+		</script>
+		
+		<p id="output">  </p>
+		
+		
+		
+		
+		
+
+			
+	</body>
+
+</html>
